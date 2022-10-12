@@ -1,0 +1,8 @@
+.video_b{    background: #ededed;
+    padding: 20px;
+    margin-bottom: 20px;}
+
+.video_b iframe{
+    width: 100%;
+    height: 500px;
+}

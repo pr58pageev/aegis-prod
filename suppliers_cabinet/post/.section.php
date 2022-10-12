@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Постер";
+$arDirProperties = Array(
+
+);
+?>

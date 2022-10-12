@@ -1,0 +1,1 @@
+<a href="tel:+84953359522" class="footer__phone-link">8 (495) 335-95-22</a>
