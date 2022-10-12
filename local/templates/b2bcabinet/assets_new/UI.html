@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UI elements</title>
+  <link href="main.css" rel="stylesheet"></head>
+
+  <body>
+    <section style="background-color: #F3F5F6;">
+      <h3 style="text-align: center;">Текст</h3>
+      <div style="margin: 20px;">
+        <h1 class="h1">Заголовок H-1</h1>
+        <h2 class="h2">Заголовок H-2</h2>
+        <h3 class="h3">Заголовок H-3</h3>
+        <h4 class="h4">Заголовок H-4</h4>
+        <h5 class="h5">Заголовок H-5</h5>
+        <h6 class="h6">Заголовок H-6</h6>
+      </div>
+
+      <div style="margin: 20px;">
+        <h1 class="h2">Заголовок H-1 (H-2)</h1>
+        <h2 class="h3">Заголовок H-2 (H-3)</h2>
+        <h3 class="h4">Заголовок H-3 (H-4)</h3>
+        <h4 class="h5">Заголовок H-4 (H-5)</h4>
+        <h5 class="h6">Заголовок H-5 (H-6)</h5>
+        <h6 class="h6">Заголовок H-6 (H-6)</h6>
+      </div>
+
+      <h3 style="text-align: center;">Кнопки</h3>
+      <div style="margin: 20px;">
+        <button class="button" type="button" style="margin: 5px;">
+          Кнопка обычная
+        </button>
+
+        <br />
+
+        <button class="button button--invert" type="button" style="margin: 5px;">
+          Кнопка обычная
+        </button>
+
+        <br />
+
+        <button class="button button--small" type="button" style="margin: 5px;">
+          Кнопка маленькая
+        </button>
+
+        <br />
+
+        <button class="button button--invert button--small" type="button" style="margin: 5px;">
+          Кнопка маленькая
+        </button>
+      </div>
+
+      <h3 style="text-align: center;">Инпуты</h3>
+      <div style="display: flex; flex-direction: column; align-items: flex-start; padding: 15px;margin: 15px 0;">
+        <input class="input" type="text" placeholder="Placeholder Input" style="margin: 5px;" />
+
+        <textarea cols="30" rows="10" class="textarea" placeholder="Textarea" style="margin: 5px;"></textarea>
+
+        <label class="checkbox" style="margin: 5px;">
+          <input class="checkbox__input" type="checkbox" />
+          <div class="checkbox__custom">
+            <svg class="checkbox__icon">
+              <use xlink:href="#done"></use>
+            </svg>
+          </div>
+          <span class="checkbox__text">
+            Согласен на обработку
+            <a class="checkbox__link" href="#">персональных данных</a>
+          </span>
+        </label>
+
+        <label class="radio" style="margin: 5px;">
+          <input class="radio__input" type="radio" name="name1" />
+          <div class="radio__custom">
+            <svg class="radio__icon">
+              <use xlink:href="#done"></use>
+            </svg>
+          </div>
+          <span class="radio__text">
+            Согласен на обработку
+            <a class="radio__link" href="#">персональных данных</a>
+          </span>
+        </label>
+
+        <div style="margin: 5px;">
+          <!-- number-label -->
+<div class="number-label">
+  <p class="number-label__decrement">-</p>
+  <input class="number-label__input" type="number" min="0" max="5" value="0" />
+  <p class="number-label__increment">+</p>
+</div>
+<!-- ./ End of number-label -->
+
+        </div>
+      </div>
+    </section>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

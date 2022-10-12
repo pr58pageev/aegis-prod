@@ -9,9 +9,9 @@ images_for_content
 b2bcabinet_old
 logs_1C 
 price_list_xls
-local
-local/templates/b2bcabinet_old
-local/templates/sotbit_origami_suppliers
-local/templates/sotbit_mailing_minimal
-local/templates/sotbit_mailing_default_mail
-local/templates/pricelists-for-page-sokalskaya
+local/ajax
+local/tests
+local/components
+local/gadgets
+local/temp
+
