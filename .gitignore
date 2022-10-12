@@ -1,6 +1,8 @@
 bitrix
 *.sql
 *.txt
+*.jpg
+*.png
 upload
 import_1C/import_files
 import_1C/import_files_resized
@@ -9,9 +11,5 @@ images_for_content
 b2bcabinet_old
 logs_1C 
 price_list_xls
-local/ajax
-local/tests
-local/components
-local/gadgets
-local/temp
+
 

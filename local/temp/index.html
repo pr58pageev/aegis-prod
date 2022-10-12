@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Decoration</title>
+  <link href="main.css" rel="stylesheet"></head>
+
+  <body style="margin: 0px;">
+    <main style="padding-top: 60px;">
+      <!-- decoration -->
+      <section class="decoration-section">
+        <div class="container">
+          <h1 class="decoration__title">
+            Оформление заказа
+          </h1>
+
+          <!-- wrap -->
+          <div class="decoration-wrap">
+            <div class="decoration-left">
+              <div class="decoration-container">
+                <h6 class="decoration__subtitle">
+                  Данные покупателя
+                </h6>
+
+                <div class="decoration-container-wrap">
+                  <div class="decoration-container-col">
+                    <div class="decoration-dropdown-wrapper">
+                      <span class="decoration-dropdown__title">
+                        Существующее юридическое лицо
+                      </span>
+
+                      <div
+                        id="man"
+                        class="decoration-dropdown j_dropdown j_naming"
+                        data-dropdown-select
+                      >
+                        <select
+                          data-dropdown-select-node
+                          class="decoration-dropdown__select"
+                        >
+                          <option
+                            selected
+                            value="Константин Иванович Константинопольский"
+                          >
+                            Константин Иванович Константинопольский
+                          </option>
+                          <option
+                            value="1Константин Иванович Константинопольский"
+                          >
+                            1Константин Иванович Константинопольский
+                          </option>
+                          <option
+                            value="2Константин Иванович Константинопольский"
+                          >
+                            2Константин Иванович Константинопольский
+                          </option>
+                        </select>
+                        <button
+                          data-dropdown-target="#man"
+                          class="decoration-dropdown__button j_toggleDropdown"
+                          type="button"
+                        >
+                          <span
+                            data-naming="Константин Иванович Константинопольский"
+                            class="decoration-dropdown_title"
+                          >
+                            Константин Иванович Константинопольский
+                          </span>
+
+                          <svg class="decoration-dropdown__arrow">
+                            <use xlink:href="#arrow"></use>
+                          </svg>
+                        </button>
+
+                        <div
+                          data-naming-triggers=""
+                          class="decoration-dropdown-content"
+                        >
+                          <div class="decoration-dropdown-content-scroller">
+                            <label class="radio">
+                              <input
+                                class="radio__input"
+                                type="radio"
+                                name="man"
+                                value="Константин Иванович Константинопольский"
+                              />
+                              <span class="radio__text">
+                                Константин Иванович Константинопольский
+                              </span>
+                            </label>
+                            <label class="radio">
+                              <input
+                                class="radio__input"
+                                type="radio"
+                                name="man"
+                                value="1Константин Иванович Константинопольский"
+                              />
+                              <span class="radio__text">
+                                1Константин Иванович Константинопольский
+                              </span>
+                            </label>
+                            <label class="radio">
+                              <input
+                                class="radio__input"
+                                type="radio"
+                                name="man"
+                                value="2Константин Иванович Константинопольский"
+                              />
+                              <span class="radio__text">
+                                2Константин Иванович Константинопольский
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="decoration-desc">
+                      <span class="decoration__subtext">
+                        ООО «Константин»
+                      </span>
+                      <span class="decoration__subtext">
+                        ИП Константинопольский И.К.
+                      </span>
+                      <span class="decoration__subtext">
+                        ИНН 5438419831
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="decoration-container-col">
+                    <button class="button-add" type="button">
+                      <svg class="decoration-dropdown__icon">
+                        <use xlink:href="#sub"></use>
+                      </svg>
+
+                      <span class="button-add__text">
+                        Создать новое
+                      </span>
+                    </button>
+
+                    <div class="decoration-container-add">
+                      <input
+                        type="text"
+                        class="input decoration__input"
+                        placeholder="Название компании"
+                      />
+                      <input
+                        disabled
+                        type="text"
+                        class="input decoration__input"
+                        placeholder="ООО / ИП"
+                      />
+                      <input
+                        disabled
+                        type="text"
+                        class="input decoration__input"
+                        placeholder="ИНН"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="decoration-container">
+                <div class="decoration-container-wrap">
+                  <div class="decoration-container-col">
+                    <h6 class="decoration__subtitle">
+                      Данные для доставки
+                    </h6>
+
+                    <div class="decoration-container-radios">
+                      <label class="radio">
+                        <input disabled class="radio__input" type="radio" />
+                        <div class="radio__custom">
+                          <svg class="radio__icon">
+                            <use xlink:href="#checked"></use>
+                          </svg>
+                        </div>
+                        <span class="radio__text">
+                          Самовывоз
+                        </span>
+                      </label>
+                      <label class="radio">
+                        <input class="radio__input" type="radio" />
+                        <div class="radio__custom">
+                          <svg class="radio__icon">
+                            <use xlink:href="#checked"></use>
+                          </svg>
+                        </div>
+                        <span class="radio__text">
+                          Доставка
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="decoration-dropdown-wrapper">
+                      <span class="decoration-dropdown__title">
+                        Параметры доставки
+                      </span>
+
+                      <div
+                        id="man2"
+                        class="decoration-dropdown j_dropdown j_naming"
+                        data-dropdown-select
+                      >
+                        <select
+                          data-dropdown-select-node
+                          class="decoration-dropdown__select"
+                        >
+                          <option selected value="0">
+                            Константин Иванович Константинопольский
+                          </option>
+                          <option value="1">
+                            1Константин Иванович Константинопольский
+                          </option>
+                          <option value="2">
+                            2Константин Иванович Константинопольский
+                          </option>
+                        </select>
+
+                        <button
+                          data-dropdown-target="#man2"
+                          class="decoration-dropdown__button j_toggleDropdown"
+                          type="button"
+                        >
+                          <span
+                            data-naming="Константин Иванович Константинопольский"
+                            class="decoration-dropdown_title"
+                          >
+                            Константин Иванович Константинопольский
+                          </span>
+
+                          <svg class="decoration-dropdown__arrow">
+                            <use xlink:href="#arrow"></use>
+                          </svg>
+                        </button>
+
+                        <div
+                          data-naming-triggers=""
+                          class="decoration-dropdown-content"
+                        >
+                          <div class="decoration-dropdown-content-scroller">
+                            <label class="radio">
+                              <input
+                                class="radio__input"
+                                type="radio"
+                                name="man2"
+                                value="0"
+                              />
+                              <span class="radio__text">
+                                Константин Иванович Константинопольский
+                              </span>
+                            </label>
+                            <label class="radio">
+                              <input
+                                class="radio__input"
+                                type="radio"
+                                name="man2"
+                                value="1"
+                              />
+                              <span class="radio__text">
+                                1Константин Иванович Константинопольский
+                              </span>
+                            </label>
+                            <label class="radio">
+                              <input
+                                class="radio__input"
+                                type="radio"
+                                name="man2"
+                                value="2"
+                              />
+                              <span class="radio__text">
+                                2Константин Иванович Константинопольский
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="button-add" type="button">
+                      <svg class="decoration-dropdown__icon">
+                        <use xlink:href="#sub"></use>
+                      </svg>
+
+                      <span class="button-add__text">
+                        Новый адрес доставки
+                      </span>
+                    </button>
+
+                    <div class="decoration-inputs">
+                      <input
+                        type="text"
+                        class="input decoration__input decoration__input--small"
+                        placeholder="Время"
+                      />
+                      <input
+                        type="text"
+                        class="input decoration__input decoration__input--small j_datepicker"
+                        placeholder="Дата"
+                      />
+                      <input
+                        type="text"
+                        class="input decoration__input j_mask"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                      <textarea
+                        cols="1"
+                        class="textarea decoration__textarea"
+                        placeholder="Комментарий к заказу"
+                      ></textarea>
+                    </div>
+
+                    <div class="decoration-info">
+                      <div
+                        class="decoration-info-block decoration-aside-result-row--big"
+                      >
+                        <span
+                          class="decoration-dropdown__title decoration-tooltip-wrapper"
+                        >
+                          Стоимость доставки
+
+                          <div class="decoration-tooltip">
+                            <svg class="decoration-tooltip__icon">
+                              <use xlink:href="#tooltip"></use>
+                            </svg>
+
+                            <p class="decoration-tooltip__text">
+                              Оплата производится только по безналичном расчету
+                            </p>
+                          </div>
+                        </span>
+
+                        <em class="decoration-aside-result-row__price">
+                          350 Р
+                        </em>
+                      </div>
+                      <div
+                        class="decoration-info-block decoration-aside-result-row--big"
+                      >
+                        <span class="decoration-dropdown__title">
+                          Ближайшая доставка
+                        </span>
+
+                        <em class="decoration-aside-result-row__price">
+                          23.06.2020
+                        </em>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="decoration-container-col">
+                    <!-- map -->
+                    <div class="decoration-container-map"></div>
+                    <!-- ./End of map -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- aside -->
+            <aside class="decoration-aside">
+              <div class="decoration-aside-header">
+                <h6 class="decoration__subtitle">
+                  Ваш заказ
+                </h6>
+
+                <span class="decoration-aside__count">
+                  <em>3</em>
+                  товара
+                </span>
+              </div>
+
+              <div class="decoration-aside-body">
+                <div class="decoration-aside-scroller">
+                  <div class="decoration-aside-product">
+                    <div class="decoration-aside-product-info">
+                      <span class="decoration-aside-product__title">
+                        Диспенсер для листовых полотенец Z/Wсл., белый пл...
+                      </span>
+
+                      <span
+                        class="decoration-aside-product__title decoration-aside-product__title--full"
+                      >
+                        Диспенсер для листовых полотенец Z/Wсл., белый пластик
+                        PAPERNET 366*290*108мм 1/1
+                      </span>
+
+                      <span class="decoration-aside-product__desc">
+                        1 уп. (Кол-во в упаковке: 6)
+                      </span>
+                    </div>
+
+                    <em class="decoration-aside-product__price">
+                      1500 Р
+                    </em>
+                  </div>
+                  <div class="decoration-aside-product">
+                    <div class="decoration-aside-product-info">
+                      <span class="decoration-aside-product__title">
+                        Бумажное полотенце белое CLASSIC VEIRO 2сл, 4шт 1/6
+                      </span>
+
+                      <span
+                        class="decoration-aside-product__title decoration-aside-product__title--full"
+                      >
+                        Бумажное полотенце белое CLASSIC VEIRO 2сл, 4шт 1/6
+                        Бумажное полотенце белое CLASSIC VEIRO 2сл, 4шт 1/6
+                      </span>
+
+                      <span class="decoration-aside-product__desc">
+                        1 уп. (Кол-во в упаковке: 6)
+                      </span>
+                    </div>
+
+                    <em class="decoration-aside-product__price">
+                      150 000 Р
+                    </em>
+                  </div>
+                  <div class="decoration-aside-product">
+                    <div class="decoration-aside-product-info">
+                      <span class="decoration-aside-product__title">
+                        Диспенсер для листовых полотенец Z/Wсл., белый пл...
+                      </span>
+
+                      <span
+                        class="decoration-aside-product__title decoration-aside-product__title--full"
+                      >
+                        Диспенсер для листовых полотенец Z/Wсл., белый пластик
+                        PAPERNET 366*290*108мм 1/1
+                      </span>
+
+                      <span class="decoration-aside-product__desc">
+                        1 уп. (Кол-во в упаковке: 6)
+                      </span>
+                    </div>
+
+                    <em class="decoration-aside-product__price">
+                      1500 Р
+                    </em>
+                  </div>
+                  <div class="decoration-aside-product">
+                    <div class="decoration-aside-product-info">
+                      <span class="decoration-aside-product__title">
+                        Бумажное полотенце белое CLASSIC VEIRO 2сл, 4шт 1/6
+                      </span>
+
+                      <span
+                        class="decoration-aside-product__title decoration-aside-product__title--full"
+                      >
+                        Бумажное полотенце белое CLASSIC VEIRO 2сл, 4шт 1/6
+                        Бумажное полотенце белое CLASSIC VEIRO 2сл, 4шт 1/6
+                      </span>
+
+                      <span class="decoration-aside-product__desc">
+                        1 уп. (Кол-во в упаковке: 6)
+                      </span>
+                    </div>
+
+                    <em class="decoration-aside-product__price">
+                      150 000 Р
+                    </em>
+                  </div>
+                </div>
+              </div>
+
+              <div class="decoration-aside-footer">
+                <div class="decoration-aside-result">
+                  <div class="decoration-aside-result-row">
+                    <span class="decoration-aside-result-row__text">
+                      Доставка
+                    </span>
+
+                    <em class="decoration-aside-result-row__price">
+                      350 Р
+                    </em>
+                  </div>
+
+                  <div
+                    class="decoration-aside-result-row decoration-aside-result-row--big"
+                  >
+                    <span class="decoration-aside-result-row__text">
+                      Итого:
+                    </span>
+
+                    <em class="decoration-aside-result-row__price">
+                      153 040 Р
+                    </em>
+                  </div>
+                </div>
+
+                <div class="decoration-aside-pay">
+                  <span class="decoration-aside-pay__title">
+                    Способ оплаты
+                  </span>
+                  <h6
+                    class="decoration-aside-pay__value decoration-tooltip-wrapper"
+                  >
+                    Безналичный расчет
+
+                    <div class="decoration-tooltip">
+                      <svg class="decoration-tooltip__icon">
+                        <use xlink:href="#tooltip"></use>
+                      </svg>
+
+                      <p class="decoration-tooltip__text">
+                        Оплата производится только по безналичном расчету
+                      </p>
+                    </div>
+                  </h6>
+                </div>
+
+                <button type="button" class="main_btn">
+                  Оплатить заказ
+                </button>
+
+                <label for="cbx2" class="label-cbx">
+                  <input
+                    id="cbx2"
+                    type="checkbox"
+                    class="invisible"
+                    name="personal"
+                  />
+
+                  <span class="checkbox">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20">
+                      <path
+                        d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695
+                      18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305
+                      1.8954305,1 3,1 Z"
+                      ></path>
+                      <polyline points="4 11 8 15 16 6"></polyline>
+                    </svg>
+                  </span>
+
+                  <p
+                    class="feedback_block__compliance_title fonts__middle_comment"
+                  >
+                    Я подтверждаю своё согласие с
+                    <a
+                      class="feedback_block__compliance_link fonts__middle_comment"
+                      href="/help/confidentiality/"
+                    >
+                      политикой обработки персональных данных
+                    </a>
+                  </p>
+                </label>
+              </div>
+            </aside>
+            <!-- ./End of aside -->
+          </div>
+          <!-- ./End of wrap -->
+        </div>
+        <!-- ./ End of container -->
+      </section>
+      <!-- ./ End of decoration -->
+    </main>
+
+    <!-- Modal Auth -->
+<div class="modal-wrapper j_modal modal-auth" id="modal-auth">
+  <div class="modal modal--medium">
+    <!-- btn-close -->
+    <button class="modal-close button-close">
+      <span class="button-close__item"></span>
+      <span class="button-close__item"></span>
+    </button>
+    <!-- ./ End of btn-close -->
+
+    <!-- wrap -->
+    <div class="modal-wrap">
+      <h3 class="modal__title">
+        Авторизация
+      </h3>
+
+      <p class="modal__text">
+        Войдите или
+        <a class="modal__link" href="#">
+          зарегистрируйтесь
+        </a>
+      </p>
+
+      <form action="" class="modal-form">
+        <input type="email" class="input" placeholder="Ваш email" />
+        <input type="password" class="input" placeholder="Пароль" />
+
+        <a href="#" class="modal-link modal-link--gray">
+          Забыли пароль?
+        </a>
+
+        <button type="button" class="main_btn">
+          Войти
+        </button>
+
+        <a href="#" class="modal-link">
+          Зарегистрироваться
+        </a>
+      </form>
+    </div>
+    <!-- ./ End of wrap -->
+  </div>
+</div>
+<!-- ./ End of Modal Auth -->
+
+    <!-- Modal Reg -->
+<div class="modal-wrapper j_modal modal-reg" id="modal-reg">
+  <div class="modal modal--medium">
+    <!-- btn-close -->
+    <button class="modal-close button-close">
+      <span class="button-close__item"></span>
+      <span class="button-close__item"></span>
+    </button>
+    <!-- ./ End of btn-close -->
+
+    <!-- wrap -->
+    <div class="modal-wrap">
+      <h3 class="modal__title">
+        Регистрация
+      </h3>
+
+      <p class="modal__text">
+        Есть аккаунт?
+        <a class="modal__link" href="#">
+          Войдите в систему
+        </a>
+      </p>
+
+      <form action="" class="modal-form">
+        <input type="email" class="input" placeholder="Ваш email" />
+        <input type="password" class="input" placeholder="Пароль" />
+        <input type="password" class="input" placeholder="Повторите пароль" />
+
+        <button type="button" class="main_btn">
+          Зарегистрироваться
+        </button>
+      </form>
+    </div>
+    <!-- ./ End of wrap -->
+  </div>
+</div>
+<!-- ./ End of Modal Reg -->
+
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>

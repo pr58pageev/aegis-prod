@@ -1,0 +1,6 @@
+.custm_flex{
+	display: flex;
+    width: 72%;
+    justify-content: space-around;
+    align-items: center;
+}
